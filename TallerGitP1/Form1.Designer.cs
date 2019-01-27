@@ -186,6 +186,7 @@
             this.guardar.TabIndex = 16;
             this.guardar.Text = "Guardar Resultado";
             this.guardar.UseVisualStyleBackColor = true;
+            this.guardar.Click += new System.EventHandler(this.guardar_Click);
             // 
             // Form1
             // 

@@ -41,5 +41,28 @@ namespace TallerGitP1
         {
 
         }
+
+        private void guardar_Click(object sender, EventArgs e)
+        {
+            Informacion info = new Informacion();
+
+            info.P1 = textBox1.Text;
+            info.P2 = textBox2.Text;
+            info.P3 = textBox3.Text;
+            info.P4 = textBox4.Text;
+            info.P5 = textBox5.Text;
+            info.P6 = textBox6.Text;
+            info.P7 = textBox7.Text;
+            info.P8 = textBox8.Text;
+
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
+            textBox8.Text = "";
+        }
     }
 }

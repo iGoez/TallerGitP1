@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace TallerGitP1
 {
+
     static class Program
     {
         /// <summary>
