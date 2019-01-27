@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,9 +14,11 @@ namespace TallerGitP1
 {
     public partial class Form1 : Form
     {
+        Informacion info;
         public Form1()
         {
             InitializeComponent();
+            info = new Informacion();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -44,7 +48,7 @@ namespace TallerGitP1
 
         private void guardar_Click(object sender, EventArgs e)
         {
-            Informacion info = new Informacion();
+            
 
             info.P1 = textBox1.Text;
             info.P2 = textBox2.Text;
@@ -55,6 +59,7 @@ namespace TallerGitP1
             info.P7 = textBox7.Text;
             info.P8 = textBox8.Text;
 
+
             textBox1.Text = "";
             textBox2.Text = "";
             textBox3.Text = "";
@@ -63,6 +68,8 @@ namespace TallerGitP1
             textBox6.Text = "";
             textBox7.Text = "";
             textBox8.Text = "";
+
+            info.escritura();
         }
 
         private void Cargar_Click(object sender, EventArgs e)

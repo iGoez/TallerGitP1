@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
+using System.Threading;
 
 namespace TallerGitP1
 {
@@ -17,6 +19,7 @@ namespace TallerGitP1
         private string p6;
         private string p7;
         private string p8;
+        private int cantidad;
 
         public Informacion()
         {
@@ -28,6 +31,7 @@ namespace TallerGitP1
             this.p6 = "";
             this.p7 = "";
             this.p8 = "";
+            this.cantidad = 0;
         }
 
         public string P1 { get => p1; set => p1 = value; }
@@ -39,5 +43,30 @@ namespace TallerGitP1
         public string P7 { get => p7; set => p7 = value; }
         public string P8 { get => p8; set => p8 = value; }
 
+
+        public void escritura() {
+
+            try
+            {
+
+                StreamWriter sw = new StreamWriter("..\\..\\txt\\ejemplo"+cantidad+".txt", true);
+                
+                sw.WriteLine(P1);
+                sw.WriteLine(P2);
+                sw.WriteLine(P3);
+                sw.WriteLine(P4);
+                sw.WriteLine(P5);
+                sw.WriteLine(P6);
+                sw.WriteLine(P7);
+                sw.WriteLine(P8);
+
+                cantidad += 1;
+                sw.Close();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Exception: " + e.Message);
+            }
+        }
     }
 }
