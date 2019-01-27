@@ -64,5 +64,10 @@ namespace TallerGitP1
             textBox7.Text = "";
             textBox8.Text = "";
         }
+
+        private void Cargar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

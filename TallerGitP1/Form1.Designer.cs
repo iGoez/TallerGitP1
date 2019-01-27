@@ -45,6 +45,7 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.guardar = new System.Windows.Forms.Button();
+            this.Cargar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pregunta1
@@ -180,7 +181,7 @@
             // 
             // guardar
             // 
-            this.guardar.Location = new System.Drawing.Point(341, 403);
+            this.guardar.Location = new System.Drawing.Point(244, 403);
             this.guardar.Name = "guardar";
             this.guardar.Size = new System.Drawing.Size(113, 35);
             this.guardar.TabIndex = 16;
@@ -188,11 +189,22 @@
             this.guardar.UseVisualStyleBackColor = true;
             this.guardar.Click += new System.EventHandler(this.guardar_Click);
             // 
+            // Cargar
+            // 
+            this.Cargar.Location = new System.Drawing.Point(414, 403);
+            this.Cargar.Name = "Cargar";
+            this.Cargar.Size = new System.Drawing.Size(113, 35);
+            this.Cargar.TabIndex = 17;
+            this.Cargar.Text = "Cargar Resultado";
+            this.Cargar.UseVisualStyleBackColor = true;
+            this.Cargar.Click += new System.EventHandler(this.Cargar_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Cargar);
             this.Controls.Add(this.guardar);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
@@ -236,6 +248,7 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button guardar;
+        private System.Windows.Forms.Button Cargar;
     }
 }
 
