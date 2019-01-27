@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pregunta1 = new System.Windows.Forms.Label();
             this.pregunta2 = new System.Windows.Forms.Label();
             this.pregunnta3 = new System.Windows.Forms.Label();
@@ -46,8 +45,6 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.guardar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pregunta1
@@ -190,15 +187,6 @@
             this.guardar.Text = "Guardar Resultado";
             this.guardar.UseVisualStyleBackColor = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(803, 456);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,10 +209,8 @@
             this.Controls.Add(this.pregunnta3);
             this.Controls.Add(this.pregunta2);
             this.Controls.Add(this.pregunta1);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Inventario";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,7 +235,6 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Button guardar;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
